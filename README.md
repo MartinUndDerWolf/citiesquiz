@@ -5,7 +5,7 @@
 This is the implementation of a small game, which was created in less then 8h. It also shows the usage of the GoogleMaps JavaScript API with the help of [AGM - Angular Google Maps](https://angular-maps.com/).
 The site was tested on the following platforms:
 
-## Testing
+### Testing
 - Mac OS X 10.12.6
   - Firefox Quantum 58.0.2 (64-Bit)
   - Safari 11.0.3
@@ -18,7 +18,10 @@ The site was tested on the following platforms:
   - iOS 11.2.6
 - Windows
   - Windows 7 / IE 11
-  - Firefox Quantum﻿57.0 (64-Bit)
+  - Windows 7 / Firefox Quantum﻿57.0 (64-Bit)
+  - Windows 10 / IE Edge 25
+  - Windows 10 / Firefox Quantum﻿58.0.2 (32-Bit)
+  
 
 ### Explain how you would store the high score
 
