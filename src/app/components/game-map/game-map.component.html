@@ -1,0 +1,31 @@
+<div fxLayout="column" fxFlexFill>
+  <div class="msit-map-button" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="10px" #msitBtnRow>
+    <button mat-raised-button color="warn" *ngIf="gameService.gameEnd" (click)="newGameFn()">New Game</button>
+    <button mat-raised-button *ngIf="!gameService.gameEnd" (click)="placeCurrentMarkerFn()">Place</button>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="start stretch" class="msit-canvas msit-no-text-select" #msitCanvas>
+    <agm-map
+      [style.height.px]="msitMapHeight"
+      [style.width.px]="msitMapWidth"
+      class="msit-agm-map"
+      [styles]='mapStyles'
+      [latitude]="defaultOptions.initLat"
+      [longitude]="defaultOptions.initLng"
+      [zoom]="defaultOptions.zoom"
+      [disableDefaultUI]="true"
+      [zoomControl]="true"
+      [fullscreenControl]="true"
+      [streetViewControl]="false"
+      (mapClick)="mapClicked($event)">
+      <app-map></app-map>
+      <agm-marker
+        *ngIf="userGuessMarker"
+        (dragEnd)="markerDragEnd(userGuessMarker, $event)"
+        [latitude]="userGuessMarker.lat"
+        [longitude]="userGuessMarker.lng"
+        [label]="userGuessMarker.label"
+        [markerDraggable]="userGuessMarker.draggable">
+      </agm-marker>
+    </agm-map>
+  </div>
+</div>

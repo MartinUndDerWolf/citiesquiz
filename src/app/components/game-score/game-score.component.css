@@ -1,0 +1,12 @@
+:host {
+  max-height: 100px;
+  height: 100px;
+}
+.msit-game-display {
+  padding-top: 20px;
+  text-align: center;
+}
+.msit-curr-search {
+  padding-top: 10px;
+  font-size: larger;
+}
