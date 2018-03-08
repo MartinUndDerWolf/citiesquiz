@@ -14,6 +14,7 @@ The site was tested on the following platforms:
   - Firefox Quantum 57.0.1 (64-Bit)
 - Android
   - Samsung S5 Mini (Had problems with the automatic google translation, but works if deactivated.)
+  - Samsung S5 Android 4.4.4
 - iPhone
   - iOS 11.2.6
 - Windows
