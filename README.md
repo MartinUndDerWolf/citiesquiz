@@ -39,6 +39,7 @@ With a REST server the high score could be saved on the server. A page could be 
 - Add preview of all cities.
 - Extend list of cities. Add other geographic locations (lakes, rivers, mountains ...)
 - Input of a user name, if the user reached a high score.
+- Implement tests.
 
 ## Angular CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
